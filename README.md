@@ -23,7 +23,7 @@
 - Enforces consistent implementation of Trigger logic
 - Implement tools, utilities, and abstractions to make your handler logic as lightweight as possible
 - Assure the Order of execution of the code
-- Prevent the recursion.
+- Prevent the recursion
 - Ensure that trigger will do not create any issue while working with large datasets
 
 ![Trigger Framework Schema](images/TriggerFrameworkDiagram.png)
