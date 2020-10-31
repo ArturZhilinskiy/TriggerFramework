@@ -1,7 +1,7 @@
 # Trigger Framework
 
 ### Apex Triggers
-> A **trigger** is Apex code that executes before or after the following types of operations:
+A **trigger** is Apex code that executes before or after the following types of operations:
 - insert
 - update
 - delete
