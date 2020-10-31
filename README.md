@@ -26,4 +26,4 @@
 - Prevent the recursion.
 - Ensure that trigger will do not create any issue while working with large datasets
 
-![Trigger Framework Schema](./Trigger Framework Diagram.png)
+![Trigger Framework Schema](Trigger Framework Diagram.png)
