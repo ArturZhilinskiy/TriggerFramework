@@ -44,3 +44,4 @@ force-app/main/default/lwc/.eslintrc.json
 scripts/apex/hello.apex
 scripts/soql/account.soql
 config/project-scratch-def.json
+.vim-force.com/session.properties
