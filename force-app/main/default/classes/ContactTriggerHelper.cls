@@ -5,4 +5,14 @@ public class ContactTriggerHelper {
             newContacts[i].LastName = newContacts[i].LastName + i;
         }
     }
+
+    public static void updateContctEmail(Map<Id, Contact> newContactsById) {
+        for (Id key : newContactsById.keySet()) {
+            for (Contact contact : newContactsById.get(key)) {
+                contact.Email = 'triggerTest@gmail.com';
+            }
+        }
+
+        update newContactsById.values();
+    } 
 }

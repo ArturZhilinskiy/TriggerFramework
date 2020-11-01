@@ -5,7 +5,7 @@ public class ContactTriggerHandler implements TriggerHandler {
     }
 
     public static void afterInsert(Map<Id, sObject> newRecordsById) {
-
+        ContactTriggerHelper.updateContctEmail((Map<Id, Contact>) newContactsById);
     }
 
     public static void beforeUpdate(Map<Id, sObject> oldRecordsById, Map<Id, sObject> newRecordsById) {
