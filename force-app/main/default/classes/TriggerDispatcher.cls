@@ -1,5 +1,5 @@
 public class TriggerDispatcher {
-    
+    private static Boolean isFirstCall = true;
     public static void run(TriggerHandler handler, System.TriggerOperation operationType) {
 
         switch on operationType {
@@ -13,7 +13,10 @@ public class TriggerDispatcher {
                 handler.beforeUpdate(Trigger.oldMap, Trigger.newMap);
             }
             when AFTER_UPDATE {
-                handler.afterUpdate(Trigger.oldMap, Trigger.newMap);
+                if (isFirstCall == true) {
+                    isFirstCall = false;
+                    handler.afterUpdate(Trigger.oldMap, Trigger.newMap);
+                }
             }
             when BEFORE_DELETE {
                 handler.beforeDelete(Trigger.oldMap);

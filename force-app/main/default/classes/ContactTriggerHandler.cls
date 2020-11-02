@@ -13,7 +13,7 @@ public class ContactTriggerHandler implements TriggerHandler {
     }
 
     public static void afterUpdate(Map<Id, sObject> oldRecordsById, Map<Id, sObject> newRecordsById) {
-
+        
     }
 
     public static void beforeDelete(Map<Id, sObject> oldRecordsById) {
