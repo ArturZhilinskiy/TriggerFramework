@@ -7,10 +7,11 @@ public class ContactTriggerHelper {
     }
 
     public static void updateContctEmail(Map<Id, Contact> newContactsById) {
-        for (Id key : newContactsById.keySet()) {
-            newContactsById.get(key).Email = 'triggerTest@gmail.com';
+        List<Contact> contacts = [SELECT Email FROM Contact WHERE Id =: newContactsById.keySet()];
+        for (Contact contact : contacts) {
+            contact.Email = 'triggerTest@gmail.com';
         }
 
-        update newContactsById.values();
+        update contacts;
     } 
 }
