@@ -27,3 +27,11 @@ A **trigger** is Apex code that executes before or after the following types of 
 - Ensure that trigger will do not create any issue while working with large datasets
 
 ![Trigger Framework Schema](images/TriggerFrameworkDiagram.png)
+
+## Example
+
+![ContactTrigger](images/ContactTrigger.png)
+![TriggerDispatcher](images/TriggerDispatcher.png)
+![TriggerHandler](images/TriggerHandler.png)
+![ContactTriggerHandler](images/ContactTriggerHandler.png)
+![ContactTriggerHelper](images/ContactTriggerHelper.png)
